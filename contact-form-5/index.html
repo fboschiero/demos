@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Humo</title>
+    <title>Formulario de contacto - Floating placeholder</title>
     <link rel="stylesheet" href="main.css">
 </head>
 
@@ -18,7 +18,23 @@
         <div class="contact">
             <form id="form">
                 <legend class="header">Get In Touch</legend>
-                <fieldset>
+
+                <div class="field">
+                    <input type="text" name="fullname" id="fullname" placeholder="Ingresa tu nombre">
+                    <label for="fullname">Nombre</label>
+                </div>
+
+                <div class="field">
+                    <input type="text" name="email" id="email" placeholder="Ingresa tu eMail">
+                    <label for="email">eMail</label>
+                </div>
+
+                <div class="field">
+                    <textarea placeholder="ingresa tu mensaje..." id="message-input"></textarea>
+                    <label for="message-input">Mensaje</label>
+                </div>
+
+                <!--fieldset>
                     <label class="fa fa-user" for="name-input" aria-hidden="true"></label>
                     <input type="text" placeholder="Your name..." id="name-input" />
                 </fieldset>
@@ -32,7 +48,7 @@
                 </fieldset>
                 <fieldset>
                     <button type="submit" id="btn-submit">Send</button>
-                </fieldset>
+                </fieldset -->
             </form>
         </div>
     </div>
